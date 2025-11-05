@@ -8,18 +8,99 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* Page-specific layout enhancements */
+    .hero {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: #e3f2fd;
+      border-bottom: 3px solid #1565C0;
+    }
+    .hero h2 {
+      color: #0D47A1;
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .hero p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .tool-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px 20px;
+      text-align: left;
+      transition: all 0.25s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .tool-card h3 {
+      color: #1565C0;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .tool-card p {
+      color: #444;
+      font-size: 0.95rem;
+      flex-grow: 1;
+    }
+
+    .tool-card a {
+      display: inline-block;
+      text-align: center;
+      padding: 8px 14px;
+      margin-top: 20px;
+      align-self: flex-start;
+      background: #1565C0;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+
+    .tool-card a:hover { background: #0D47A1; }
+
+    .gov-banner {
+      background: #0D47A1;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      border-bottom: 3px solid #FFC107;
+    }
+    .gov-banner h2 { font-size: 1.2rem; margin-bottom: 4px; font-weight: 600; }
+    .gov-banner p { font-size: 0.9rem; color: #e3f2fd; }
+  </style>
 </head>
 
 <body>
   <!-- ===== Government Banner ===== -->
   <div class="gov-banner">
-    <div class="gov-banner-content">
-      <img src="assets/logo.png" alt="AJK Education Logo" class="gov-logo" />
-      <div class="gov-text">
-        <h2>Government Teachers’ Digital Initiative</h2>
-        <p>Department of School Education, Azad Jammu & Kashmir</p>
-      </div>
-    </div>
+    <h2>Government Teachers’ Digital Initiative</h2>
+    <p>Department of School Education, Azad Jammu & Kashmir</p>
   </div>
 
   <!-- ===== Main Header ===== -->
@@ -30,60 +111,60 @@
 
   <!-- ===== Hero Section ===== -->
   <section class="hero">
-    <h2>Smart Tools for Teachers of Azad Jammu & Kashmir</h2>
+    <h2>Smart Tools for Teachers</h2>
     <p>
-      <strong>EduEase AJK</strong> is a digital platform designed to help government school teachers
-      in Azad Jammu & Kashmir streamline their academic and administrative tasks.
-      From generating papers and lesson plans to managing student records and diaries,
-      EduEase simplifies daily classroom work into a single, easy-to-use web portal.
+      <strong>EduEase AJK</strong> is a digital platform designed to assist government school teachers of Azad Jammu & Kashmir.
+      It automates everyday academic and administrative tasks—saving time and improving efficiency across classrooms.
     </p>
   </section>
 
-  <!-- ===== Tool Cards Section ===== -->
-  <section id="dashboard">
-    <div class="card">
+  <!-- ===== Tools Section ===== -->
+  <section class="tool-grid">
+    <div class="tool-card">
       <h3>📝 Paper Generator</h3>
-      <p>Create question papers instantly from subject-wise question banks with ready-to-print formats.</p>
+      <p>Create structured question papers instantly using predefined subject-wise question banks and templates.</p>
       <a href="paper.html">Open Tool</a>
     </div>
 
-    <div class="card">
+    <div class="tool-card">
       <h3>📚 Lesson Planner</h3>
-      <p>Design weekly or daily lesson plans, save them locally, and print or update as needed.</p>
+      <p>Plan weekly or daily lessons in a structured, printable format aligned with your curriculum.</p>
       <a href="lesson.html">Open Tool</a>
     </div>
 
-    <div class="card">
+    <div class="tool-card">
       <h3>👩‍🏫 Student Records</h3>
-      <p>Maintain attendance, grades, and performance details for every student efficiently.</p>
+      <p>Maintain attendance, grades, and student profiles with automated summaries and printable records.</p>
       <a href="students.html">Open Tool</a>
     </div>
 
-    <div class="card">
+    <div class="tool-card">
       <h3>📊 Performance Tracker</h3>
-      <p>View progress trends and analytics with interactive charts and printable summaries.</p>
+      <p>Analyze student progress using dynamic visual charts and generate performance reports.</p>
       <a href="performance.html">Open Tool</a>
     </div>
 
-    <div class="card">
+    <div class="tool-card">
       <h3>📔 Teacher Diary</h3>
-      <p>Record reflections, class notes, and activity logs — your personal digital teacher diary.</p>
+      <p>Keep a daily log of classroom reflections, meetings, and academic updates—your personal digital diary.</p>
       <a href="diary.html">Open Tool</a>
     </div>
   </section>
 
   <!-- ===== Footer ===== -->
   <footer>
-    © 2025 EduEase AJK | Smart Tools for Teachers | Designed for Government Teachers of Azad Jammu & Kashmir
+    © 2025 EduEase AJK | Smart Tools for Teachers | Department of School Education, Azad Jammu & Kashmir
   </footer>
 
-  <!-- ===== JavaScript for Theme Toggle ===== -->
+  <!-- ===== Theme Toggle Script ===== -->
   <script>
     const themeToggle = document.getElementById('themeToggle');
     themeToggle.addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
       const dark = document.body.classList.contains('dark-mode');
       themeToggle.textContent = dark ? 'Light Mode' : 'Dark Mode';
+      document.body.style.background = dark ? '#121212' : '#f5f7fa';
+      document.body.style.color = dark ? '#eee' : '#222';
     });
   </script>
 </body>

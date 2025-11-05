@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "name": "Ali Khan",
+      "class": "8th",
+      "attendance": "92%",
+      "grade": "A"
+    },
+    {
+      "name": "Fatima Noor",
+      "class": "9th",
+      "attendance": "88%",
+      "grade": "B+"
+    },
+    {
+      "name": "Bilal Ahmed",
+      "class": "10th",
+      "attendance": "95%",
+      "grade": "A+"
+    }
+  ],
+  "lessons": [
+    {
+      "day": "Monday",
+      "subject": "Math",
+      "topic": "Algebra Basics"
+    },
+    {
+      "day": "Tuesday",
+      "subject": "English",
+      "topic": "Essay Writing"
+    }
+  ],
+  "diary": [
+    {
+      "date": "2025-11-01",
+      "entry": "Completed revision of chapters 1\u20133."
+    },
+    {
+      "date": "2025-11-02",
+      "entry": "Held parent-teacher meeting."
+    }
+  ]
+}

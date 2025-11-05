@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | EduEase AJK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .content {
+      max-width: 850px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .content h2 {
+      color: #1565C0;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    .content p {
+      color: #444;
+      margin-bottom: 25px;
+      line-height: 1.7;
+    }
+    form {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 25px 30px;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    label {
+      font-weight: 500;
+      color: #1565C0;
+      display: block;
+      margin-bottom: 6px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 18px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      transition: border-color 0.2s;
+    }
+    input:focus, textarea:focus {
+      border-color: #1565C0;
+      outline: none;
+    }
+    button {
+      background: #1565C0;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.2s ease;
+    }
+    button:hover {
+      background: #0D47A1;
+    }
+    .contact-info {
+      margin-top: 35px;
+      color: #444;
+      font-size: 0.95rem;
+    }
+    .contact-info a {
+      color: #1565C0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Contact EduEase AJK</h1>
+    <a href="index.html" class="back">← Home</a>
+  </header>
+
+  <div class="content">
+    <h2>Get in Touch</h2>
+    <p>
+      Have a question, suggestion, or collaboration idea? We’d love to hear from you.
+      The <strong>EduEase AJK</strong> team welcomes feedback from teachers, education professionals,
+      and technology enthusiasts who want to improve or contribute to the platform.
+    </p>
+
+    <!-- Contact Form -->
+    <form onsubmit="return false;">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📧 Email us at: <a href="mailto:team@eduease-ajk.dev">team@eduease-ajk.dev</a></p>
+      <p>🌐 Visit: <a href="https://rcdotopi-eng.github.io/eduease-ajk/">https://rcdotopi-eng.github.io/eduease-ajk/</a></p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 EduEase AJK | Independent Educational Support Initiative
+  </footer>
+</body>
+</html>

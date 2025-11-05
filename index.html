@@ -1,24 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EduEase AJK | Smart Tools for Teachers</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/main.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1565C0, #1E88E5);
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    #langToggle {
+      background: white;
+      color: #1565C0;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: url('assets/logo.png') no-repeat center 120px/120px, #E3F2FD;
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-top: 0;
+      color: #0D47A1;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #333;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      padding: 25px 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      color: #1565C0;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      min-height: 70px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #1565C0;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      background: #0D47A1;
+      color: white;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    /* Mobile Optimization */
+    @media (max-width: 600px) {
+      .hero {
+        padding: 60px 20px 20px;
+      }
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>EduEase AJK</h1>
     <button id="langToggle">اردو / English</button>
   </header>
-  <main id="dashboard">
-    <div class="card"><a href="paper.html">📝 Paper Generator</a></div>
-    <div class="card"><a href="lesson.html">📚 Lesson Planner</a></div>
-    <div class="card"><a href="students.html">👩‍🏫 Student Records</a></div>
-    <div class="card"><a href="performance.html">📊 Performance</a></div>
-    <div class="card"><a href="diary.html">📔 Teacher Diary</a></div>
-  </main>
-  <footer>© 2025 EduEase AJK | Smart Tools for Teachers</footer>
+
+  <section class="hero">
+    <h2>Smart Tools for Teachers of Azad Jammu & Kashmir</h2>
+    <p>
+      <b>EduEase AJK</b> is a digital initiative built to assist government school teachers in Azad Jammu & Kashmir.
+      It helps simplify daily academic tasks — from paper generation to student tracking — all inside one easy web portal.
+    </p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>📝 Paper Generator</h3>
+      <p>Create question papers instantly from subject-wise question banks. Supports bilingual question templates.</p>
+      <a href="paper.html">Open Tool</a>
+    </div>
+
+    <div class="card">
+      <h3>📚 Lesson Planner</h3>
+      <p>Design structured weekly or daily lesson plans. Save, print, and reuse your plans anytime.</p>
+      <a href="lesson.html">Open Tool</a>
+    </div>
+
+    <div class="card">
+      <h3>👩‍🏫 Student Records</h3>
+      <p>Maintain attendance, performance, and student profile data easily with auto-saving options.</p>
+      <a href="students.html">Open Tool</a>
+    </div>
+
+    <div class="card">
+      <h3>📊 Performance Tracker</h3>
+      <p>Visualize student progress through dynamic charts and printable class performance summaries.</p>
+      <a href="performance.html">Open Tool</a>
+    </div>
+
+    <div class="card">
+      <h3>📔 Teacher Diary</h3>
+      <p>Record your daily reflections, meeting notes, and activity logs — your digital teacher’s companion.</p>
+      <a href="diary.html">Open Tool</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 EduEase AJK | Smart Tools for Teachers | Designed for Government Teachers of Azad Jammu & Kashmir
+  </footer>
+
+  <script>
+    // Simple bilingual toggle
+    const toggle = document.getElementById('langToggle');
+    toggle.addEventListener('click', () => {
+      const isUrdu = document.body.dir === 'rtl';
+      document.body.dir = isUrdu ? 'ltr' : 'rtl';
+      document.body.style.fontFamily = isUrdu ? 'Poppins, sans-serif' : 'Noto Nastaliq Urdu, serif';
+    });
+  </script>
 </body>
 </html>

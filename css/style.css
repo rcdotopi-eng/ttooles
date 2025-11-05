@@ -1,15 +1,9 @@
 /* =======================================================
    EduEase AJK | Smart Tools for Teachers
-   Professional Responsive Theme (v1)
-   Author: rcdotopi-eng
+   Government-Grade Professional Theme (English-only)
    ======================================================= */
 
-/* ---------- Global Reset ---------- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* {box-sizing: border-box; margin: 0; padding: 0;}
 
 html, body {
   height: 100%;
@@ -29,12 +23,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
-
-header h1, header h2 {
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
+header h1 {font-size: 1.4rem; font-weight: 600;}
 header a.back {
   color: #fff;
   text-decoration: none;
@@ -42,84 +31,55 @@ header a.back {
   font-weight: 500;
 }
 
-#langToggle {
-  background: #fff;
-  color: #1565C0;
+/* ---------- Buttons ---------- */
+button, .btn {
+  background: #1565C0;
+  color: #fff;
   border: none;
-  border-radius: 6px;
-  padding: 6px 12px;
+  padding: 8px 16px;
+  border-radius: 5px;
   cursor: pointer;
-  font-weight: 600;
-  transition: all 0.2s ease;
+  transition: background 0.2s;
+  font-weight: 500;
 }
+button:hover, .btn:hover {background: #0D47A1;}
 
-#langToggle:hover {
-  background: #e3f2fd;
-}
-
-/* ---------- Main Layout ---------- */
-main {
-  padding: 20px;
-  text-align: center;
-}
-
-main h2, main h3 {
-  color: #0D47A1;
-  margin-bottom: 15px;
-}
-
-/* ---------- Dashboard Cards ---------- */
+/* ---------- Dashboard ---------- */
 #dashboard {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   max-width: 1000px;
   margin: 30px auto;
+  padding: 0 15px;
 }
-
 .card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
   text-align: center;
   padding: 25px 20px;
   transition: all 0.2s ease-in-out;
 }
-
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
-
-.card h3 {
-  color: #1565C0;
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-}
-
-.card p {
-  font-size: 0.9rem;
-  color: #555;
-  min-height: 70px;
-}
-
+.card h3 {color:#1565C0; margin-bottom:10px;}
+.card p {font-size:0.9rem; color:#555; min-height:70px;}
 .card a {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 8px 14px;
-  background: #1565C0;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s;
+  display:inline-block;
+  margin-top:12px;
+  padding:8px 14px;
+  background:#1565C0;
+  color:#fff;
+  border-radius:5px;
+  text-decoration:none;
+  font-weight:500;
 }
+.card a:hover {background:#0D47A1;}
 
-.card a:hover {
-  background: #0D47A1;
-}
-
-/* ---------- Table Styling ---------- */
+/* ---------- Tables ---------- */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -128,93 +88,38 @@ table {
   border-radius: 8px;
   overflow: hidden;
 }
-
-th, td {
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
+th, td {padding:10px; border:1px solid #ddd;}
 th {
   background-color: #1976D2;
   color: #fff;
   text-align: left;
 }
-
-td[contenteditable] {
-  background-color: #f9fcff;
-}
-
-/* ---------- Buttons ---------- */
-button {
-  background: #1565C0;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
-  margin: 8px 5px;
-  cursor: pointer;
-  transition: background 0.2s ease-in-out;
-  font-weight: 500;
-}
-
-button:hover {
-  background: #0D47A1;
-}
-
-/* ---------- Footer ---------- */
-footer {
-  text-align: center;
-  background: #0D47A1;
-  color: white;
-  padding: 15px;
-  font-size: 0.9rem;
-  margin-top: 40px;
-}
+td[contenteditable] {background-color:#f9fcff;}
 
 /* ---------- Forms ---------- */
 input, select, textarea {
-  padding: 6px 10px;
-  margin: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+  padding:6px 10px;
+  margin:5px;
+  border-radius:5px;
+  border:1px solid #ccc;
+  font-size:1rem;
 }
+textarea {width:90%; min-height:100px;}
 
-textarea {
-  width: 90%;
-  min-height: 100px;
+/* ---------- Footer ---------- */
+footer {
+  text-align:center;
+  background:#0D47A1;
+  color:white;
+  padding:15px;
+  font-size:0.9rem;
+  margin-top:40px;
 }
 
 /* ---------- Mobile Optimization ---------- */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  header h1 {
-    margin-bottom: 8px;
-  }
-
-  #dashboard {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-  }
-
-  button, input, select {
-    width: auto;
-    font-size: 0.95rem;
-  }
-}
-
-/* ---------- Urdu Mode ---------- */
-body[dir="rtl"] {
-  font-family: 'Noto Nastaliq Urdu', serif;
-  text-align: right;
-}
-
-body[dir="rtl"] .card h3,
-body[dir="rtl"] header h1,
-body[dir="rtl"] footer {
-  text-align: right;
+  header {flex-direction: column; text-align:center;}
+  header h1 {margin-bottom:8px;}
+  #dashboard {grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:15px;}
+  button, input, select {width:auto; font-size:0.95rem;}
 }

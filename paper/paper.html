@@ -5,24 +5,168 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EduEase AJK | Question Paper Generator</title>
 
-  <!-- Fonts + Theme Integration -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Import main site theme (for font + global colors) -->
+  <!-- Main Theme -->
   <link rel="stylesheet" href="../css/style.css">
 
-  <!-- Tool-specific styles -->
+  <!-- Tool-Specific Styling -->
   <link rel="stylesheet" href="paper.css">
+
+  <style>
+    /* ======= Responsive + Modern Layout ======= */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #e3f2fd;
+      color: #0d47a1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Top Navigation */
+    .tool-header {
+      background: #0d47a1;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .tool-header h2 {
+      font-size: 1.2rem;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .back-btn {
+      background: #ffc107;
+      border: none;
+      color: #0d47a1;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .back-btn:hover {
+      background: #ffca28;
+      transform: scale(1.05);
+    }
+
+    /* Main Container */
+    .container {
+      flex-grow: 1;
+      background: #fff;
+      max-width: 900px;
+      width: 95%;
+      margin: 30px auto;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: #0d47a1;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+    }
+
+    .form-section {
+      margin-bottom: 22px;
+    }
+
+    .form-section label {
+      display: block;
+      font-weight: 600;
+      color: #1565c0;
+      margin-bottom: 6px;
+    }
+
+    select, input[type="text"], input[type="number"], input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+      accent-color: #1565c0;
+      margin-right: 6px;
+    }
+
+    .generate-btn {
+      width: 100%;
+      background: #1565c0;
+      color: white;
+      border: none;
+      padding: 12px 0;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .generate-btn:hover {
+      background: #0d47a1;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #555;
+      margin: 25px 0 10px;
+    }
+
+    /* ======= Mobile Responsive ======= */
+    @media (max-width: 600px) {
+      .container {
+        width: 90%;
+        padding: 20px 18px;
+      }
+
+      .tool-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .tool-header h2 {
+        font-size: 1rem;
+      }
+
+      .back-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <!-- ===== Header (Consistent with EduEase AJK) ===== -->
-  <header style="background:#0D47A1;color:#fff;text-align:center;padding:10px 0 8px;margin-bottom:25px;">
-    <h2 style="margin:0;font-size:1.3rem;">EduEase AJK | Question Paper Generator</h2>
-    <a href="../index.html" style="color:#FFC107;text-decoration:none;font-size:0.9rem;">← Back to Home</a>
-  </header>
+  <!-- ======= Top Navigation ======= -->
+  <div class="tool-header">
+    <h2>EduEase AJK | Question Paper Generator</h2>
+    <a href="../index.html" class="back-btn">← Back to Home</a>
+  </div>
 
-  <!-- ===== Main Tool Container ===== -->
+  <!-- ======= Main Tool ======= -->
   <div class="container">
     <h1>📄 Question Paper Generator</h1>
     <p class="subtitle">Create printable school exam papers in seconds</p>
@@ -64,13 +208,12 @@
     </form>
   </div>
 
-  <!-- ===== Footer ===== -->
-  <footer style="text-align:center;margin-top:25px;color:#555;font-size:0.85rem;">
-    © 2025 EduEase AJK | Smart Tools for Teachers |
-    <a href="../contact.html" style="color:#1565C0;text-decoration:none;">Contact Support</a>
+  <!-- ======= Footer ======= -->
+  <footer>
+    © 2025 EduEase AJK | Smart Tools for Teachers
   </footer>
 
-  <!-- ===== Libraries & Scripts ===== -->
+  <!-- ======= Scripts ======= -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="questions.js"></script>
   <script src="script.js"></script>

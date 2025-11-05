@@ -1,57 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question Paper Generator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduEase AJK | Question Paper Generator</title>
+
+  <!-- Fonts + Theme Integration -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Import main site theme (for font + global colors) -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Tool-specific styles -->
+  <link rel="stylesheet" href="paper.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>📄 Question Paper Generator</h1>
-        <p class="subtitle">Create printable school exam papers in seconds</p>
+  <!-- ===== Header (Consistent with EduEase AJK) ===== -->
+  <header style="background:#0D47A1;color:#fff;text-align:center;padding:10px 0 8px;margin-bottom:25px;">
+    <h2 style="margin:0;font-size:1.3rem;">EduEase AJK | Question Paper Generator</h2>
+    <a href="../index.html" style="color:#FFC107;text-decoration:none;font-size:0.9rem;">← Back to Home</a>
+  </header>
 
-        <form id="paperForm">
-            <!-- Subject Selection -->
-            <div class="form-section">
-                <label for="subject"><strong>1. Select Subject:</strong></label>
-                <select id="subject" required>
-                    <option value="computer9">Computer 9th</option>
-                </select>
-            </div>
+  <!-- ===== Main Tool Container ===== -->
+  <div class="container">
+    <h1>📄 Question Paper Generator</h1>
+    <p class="subtitle">Create printable school exam papers in seconds</p>
 
-            <!-- Chapters Selection -->
-            <div class="form-section">
-                <label><strong>2. Select Chapters:</strong></label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="chapters" value="ch1"> Chapter 1</label>
-                    <label><input type="checkbox" name="chapters" value="ch2"> Chapter 2</label>
-                    <label><input type="checkbox" name="chapters" value="ch3"> Chapter 3</label>
-                    <label><input type="checkbox" name="chapters" value="ch4"> Chapter 4</label>
-                </div>
-            </div>
+    <form id="paperForm">
+      <!-- Subject Selection -->
+      <div class="form-section">
+        <label for="subject"><strong>1. Select Subject:</strong></label>
+        <select id="subject" required>
+          <option value="computer9">Computer 9th</option>
+        </select>
+      </div>
 
-            <!-- Paper Type -->
-            <div class="form-section">
-                <label><strong>3. Select Paper Type:</strong></label>
-                <div class="radio-group">
-                    <label><input type="radio" name="type" value="objective" checked> Objective Only</label>
-                    <label><input type="radio" name="type" value="subjective"> Subjective Only</label>
-                    <label><input type="radio" name="type" value="both"> Both</label>
-                </div>
-            </div>
+      <!-- Chapters Selection -->
+      <div class="form-section">
+        <label><strong>2. Select Chapters:</strong></label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="chapters" value="ch1"> Chapter 1</label>
+          <label><input type="checkbox" name="chapters" value="ch2"> Chapter 2</label>
+          <label><input type="checkbox" name="chapters" value="ch3"> Chapter 3</label>
+          <label><input type="checkbox" name="chapters" value="ch4"> Chapter 4</label>
+        </div>
+      </div>
 
-            <!-- Generate Button -->
-            <div class="form-section">
-                <button type="submit" class="generate-btn">Generate Paper 📄</button>
-            </div>
-        </form>
-    </div>
+      <!-- Paper Type -->
+      <div class="form-section">
+        <label><strong>3. Select Paper Type:</strong></label>
+        <div class="radio-group">
+          <label><input type="radio" name="type" value="objective" checked> Objective Only</label>
+          <label><input type="radio" name="type" value="subjective"> Subjective Only</label>
+          <label><input type="radio" name="type" value="both"> Both</label>
+        </div>
+      </div>
 
-    <!-- Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="questions.js"></script>
-    <script src="script.js"></script>
+      <!-- Generate Button -->
+      <div class="form-section">
+        <button type="submit" class="generate-btn">Generate Paper 📄</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer style="text-align:center;margin-top:25px;color:#555;font-size:0.85rem;">
+    © 2025 EduEase AJK | Smart Tools for Teachers |
+    <a href="../contact.html" style="color:#1565C0;text-decoration:none;">Contact Support</a>
+  </footer>
+
+  <!-- ===== Libraries & Scripts ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

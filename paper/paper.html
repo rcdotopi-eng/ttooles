@@ -1,1 +1,57 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📄 Question Paper Generator</h1>
+        <p class="subtitle">Create printable school exam papers in seconds</p>
+
+        <form id="paperForm">
+            <!-- Subject Selection -->
+            <div class="form-section">
+                <label for="subject"><strong>1. Select Subject:</strong></label>
+                <select id="subject" required>
+                    <option value="computer9">Computer 9th</option>
+                </select>
+            </div>
+
+            <!-- Chapters Selection -->
+            <div class="form-section">
+                <label><strong>2. Select Chapters:</strong></label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="chapters" value="ch1"> Chapter 1</label>
+                    <label><input type="checkbox" name="chapters" value="ch2"> Chapter 2</label>
+                    <label><input type="checkbox" name="chapters" value="ch3"> Chapter 3</label>
+                    <label><input type="checkbox" name="chapters" value="ch4"> Chapter 4</label>
+                </div>
+            </div>
+
+            <!-- Paper Type -->
+            <div class="form-section">
+                <label><strong>3. Select Paper Type:</strong></label>
+                <div class="radio-group">
+                    <label><input type="radio" name="type" value="objective" checked> Objective Only</label>
+                    <label><input type="radio" name="type" value="subjective"> Subjective Only</label>
+                    <label><input type="radio" name="type" value="both"> Both</label>
+                </div>
+            </div>
+
+            <!-- Generate Button -->
+            <div class="form-section">
+                <button type="submit" class="generate-btn">Generate Paper 📄</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

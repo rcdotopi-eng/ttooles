@@ -30,6 +30,49 @@ header a.back {
   font-size: 1rem;
   font-weight: 500;
 }
+/* ---------- Government Banner ---------- */
+.gov-banner {
+  background: #0D47A1;
+  color: white;
+  width: 100%;
+  padding: 8px 0;
+  border-bottom: 3px solid #FFC107;
+  text-align: center;
+}
+
+.gov-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gov-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.gov-text h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.gov-text p {
+  font-size: 0.9rem;
+  color: #e3f2fd;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .gov-text h2 { font-size: 1rem; }
+  .gov-logo { width: 50px; height: 50px; }
+}
 
 /* ---------- Buttons ---------- */
 button, .btn {
@@ -123,3 +166,4 @@ footer {
   #dashboard {grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:15px;}
   button, input, select {width:auto; font-size:0.95rem;}
 }
+

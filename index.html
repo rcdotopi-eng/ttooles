@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EduEase AJK | Smart Tools for Teachers</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 
   <style>
-    /* Page-specific layout enhancements */
     .topbar {
       background: #0D47A1;
       color: white;
@@ -18,15 +16,23 @@
       padding: 10px 15px;
       border-bottom: 3px solid #FFC107;
     }
-    .topbar h2 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 3px;
+    .topbar h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: 3px; }
+    .topbar p { font-size: 0.9rem; color: #e3f2fd; }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
     }
-    .topbar p {
-      font-size: 0.9rem;
-      color: #e3f2fd;
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: opacity 0.2s;
     }
+    nav a:hover { opacity: 0.8; }
 
     .hero {
       text-align: center;
@@ -55,7 +61,6 @@
       margin: 50px auto;
       padding: 0 20px;
     }
-
     .tool-card {
       background: #fff;
       border-radius: 10px;
@@ -67,24 +72,20 @@
       flex-direction: column;
       justify-content: space-between;
     }
-
     .tool-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     }
-
     .tool-card h3 {
       color: #1565C0;
       font-size: 1.2rem;
       margin-bottom: 10px;
     }
-
     .tool-card p {
       color: #444;
       font-size: 0.95rem;
       flex-grow: 1;
     }
-
     .tool-card a {
       display: inline-block;
       text-align: center;
@@ -98,8 +99,18 @@
       font-weight: 500;
       transition: background 0.2s;
     }
-
     .tool-card a:hover { background: #0D47A1; }
+
+    footer .links {
+      margin-top: 10px;
+    }
+    footer .links a {
+      color: #bbdefb;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 0.9rem;
+    }
+    footer .links a:hover { text-decoration: underline; }
   </style>
 </head>
 
@@ -107,23 +118,27 @@
   <!-- ===== Project Banner ===== -->
   <div class="topbar">
     <h2>EduEase AJK – Teachers' Automation Tools</h2>
-    <p>Developed for Government School Teachers of Azad Jammu & Kashmir</p>
+    <p>Developed to Support Government School Teachers of Azad Jammu & Kashmir</p>
   </div>
 
   <!-- ===== Main Header ===== -->
   <header>
     <h1>EduEase AJK</h1>
-    <button id="themeToggle" class="btn">Switch Theme</button>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
   </header>
 
   <!-- ===== Hero Section ===== -->
   <section class="hero">
     <h2>Empowering Educators through Smart Digital Tools</h2>
     <p>
-      <strong>EduEase AJK</strong> is an independent technology initiative developed to assist
-      teachers of government schools in Azad Jammu & Kashmir.
-      It provides a set of easy-to-use web tools for daily academic and administrative tasks —
-      helping teachers save time, stay organized, and focus more on learning outcomes.
+      <strong>EduEase AJK</strong> is a technology-based initiative focused on simplifying the academic workflow of
+      government teachers in Azad Jammu & Kashmir.  
+      It provides lightweight, easy-to-use tools that automate lesson planning, paper generation, student records,
+      and performance tracking — helping educators save time and focus on teaching excellence.
     </p>
   </section>
 
@@ -131,50 +146,44 @@
   <section class="tool-grid">
     <div class="tool-card">
       <h3>📝 Paper Generator</h3>
-      <p>Create structured question papers instantly using ready subject templates and question banks.</p>
+      <p>Create subject-wise question papers instantly with printable formats and local save options.</p>
       <a href="paper.html">Open Tool</a>
     </div>
 
     <div class="tool-card">
       <h3>📚 Lesson Planner</h3>
-      <p>Design and organize weekly or daily lesson plans with a clean printable layout.</p>
+      <p>Plan weekly lessons efficiently and export to print-ready layouts for classroom preparation.</p>
       <a href="lesson.html">Open Tool</a>
     </div>
 
     <div class="tool-card">
       <h3>👩‍🏫 Student Records</h3>
-      <p>Maintain student profiles, attendance, and grades easily with local storage support.</p>
+      <p>Maintain attendance, academic progress, and performance in one simple local dashboard.</p>
       <a href="students.html">Open Tool</a>
     </div>
 
     <div class="tool-card">
       <h3>📊 Performance Tracker</h3>
-      <p>Visualize progress with class analytics and export performance reports for meetings.</p>
+      <p>Visualize class performance with interactive charts and summary reports.</p>
       <a href="performance.html">Open Tool</a>
     </div>
 
     <div class="tool-card">
       <h3>📔 Teacher Diary</h3>
-      <p>Record your daily reflections, activity notes, and meeting summaries digitally.</p>
+      <p>Record daily reflections, notes, and meetings digitally for easy reference and review.</p>
       <a href="diary.html">Open Tool</a>
     </div>
   </section>
 
   <!-- ===== Footer ===== -->
   <footer>
-    © 2025 EduEase AJK | Smart Tools for Teachers | An Independent Development for AJK Educators
+    © 2025 EduEase AJK | Smart Tools for Teachers
+    <div class="links">
+      <a href="about.html">About</a> |
+      <a href="blog.html">Blog</a> |
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="contact.html">Contact</a>
+    </div>
   </footer>
-
-  <!-- ===== Theme Toggle Script ===== -->
-  <script>
-    const themeToggle = document.getElementById('themeToggle');
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      const dark = document.body.classList.contains('dark-mode');
-      themeToggle.textContent = dark ? 'Light Mode' : 'Dark Mode';
-      document.body.style.background = dark ? '#121212' : '#f5f7fa';
-      document.body.style.color = dark ? '#eee' : '#222';
-    });
-  </script>
 </body>
 </html>
